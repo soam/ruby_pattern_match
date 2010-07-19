@@ -9,7 +9,7 @@ module PatternMatch
 class Attr < Pattern
   def check_args
     if ((@args.length != 1) and !(@args[0].is_a? Hash))
-      raise "Attr takes needs one hash argument" 
+      raise "Attr needs one argument, which should be a Hash" 
     end
   end
 
